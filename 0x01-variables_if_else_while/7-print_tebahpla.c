@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - printing alphabets in lowercase
+ * main - printing alphabets in reverse order
  * Return: 0 (success)
  */
 int main(void)
 {
 	char ch;
 
-	ch = 'a';
-	while (ch <= 'z')
+	ch = 'z';
+	while (ch >= 'a')
 	{
 		putchar(ch);
-		ch = ch + 1;
+		ch = ch - 1;
 	}
 	putchar('\n');
 	return (0);
