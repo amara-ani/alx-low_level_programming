@@ -9,14 +9,11 @@ int main(void)
 
 	for (dig = 0; dig < 10; dig++)
 	{
+		putchar(dig + '0');
 		if (dig != (10 - 1))
 		{
-			putchar(dig + '0');
 			putchar(',');
-		}
-		if (dig == (10 - 1))
-		{
-			putchar(dig + '0');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
