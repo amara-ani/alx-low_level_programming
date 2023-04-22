@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-	int dig;
+	int digi;
 
-	for (dig = 0; dig < 10; dig++)
+	for (digi = 0; digi < 10; digi++)
 	{
-		putchar(dig + '0');
-		if (dig != (10 - 1))
+		putchar(digi + '0');
+		if (digi != (10 - 1))
 		{
 			putchar(',');
 			putchar(' ');
