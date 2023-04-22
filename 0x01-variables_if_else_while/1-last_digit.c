@@ -1,7 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* print last digit of random numbers*/
+/**
+ * main - Entry point
+ * print last digit of random numbers
+ * Return: Always 0 (Success)
+ */
 
 /* betty style doc for function main goes there */
 int main(void)

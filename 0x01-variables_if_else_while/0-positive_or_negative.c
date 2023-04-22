@@ -1,7 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* to print random numbers */
+/**
+ * main - Entry point
+ * to print random numbers
+ * Return: Always 0 (Success)
+ */
 
 /* betty style doc for function main goes there */
 int main(void)
