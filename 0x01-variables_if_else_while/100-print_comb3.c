@@ -13,11 +13,12 @@ int main(void)
 		{
 			putchar(digi + '0');
 			putchar(ch + '0');
-			if (digi != (10 - 1) && ch != (10 - 1))
+			if (digi == (9 - 1) && ch == (10 - 1))
 			{
-				putchar(',');
-				putchar(' ');
+				continue;
 			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
