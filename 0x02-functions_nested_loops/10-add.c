@@ -5,10 +5,10 @@
  * @b: another checker
  * Return: values
  */
-int add(int a, int b);
+int add(int a, int b)
 {
-	int a, b, result;
+	int result;
 
 	result = a + b;
-	return result;
+	return (result);
 }
