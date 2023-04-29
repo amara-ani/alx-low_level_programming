@@ -1,0 +1,25 @@
+#include "main.h"
+/**
+ * print_line - prints a straight line till the desired input
+ * @n: checker
+ * Return: 0 (success)
+ */
+void print_line(int n)
+{
+	int i;
+
+	i = 1;
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		while (i <= n)
+		{
+			_putchar('_');
+			i++;
+		}
+		_putchar('\n');
+	}
+}
