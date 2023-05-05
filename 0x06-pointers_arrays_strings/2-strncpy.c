@@ -1,28 +1,29 @@
 #include "main.h"
 /**
- * _strncpy - two pointers having same content
- * @src: checker
- * @dest: checker
- * @n: size of number
-* Return: Always 0.
+ * _strncpy - check the code for Holberton School students.
+ * @src: parameter to a src to copy
+ * @dest: parameter for dest
+ * @n: parameter for number of bytes
+ * Return: Always 0.
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int c = 0;
-	int d = 0;
+	int a = 0;
+	int b = 0;
 
-	while (c != n)
+	while (a != n)
 	{
-		dest[d] = src[c];
-		d++;
-		c++;
-		if (src[c] == '\0')
+		dest[b] = src[a];
+		b++;
+		a++;
+		if (src[a] == '\0')
 		{
 			break;
 		}
 	}
-	while (d != n)
-		dest[d++] = '\0';
+	while (b != n)
+		dest[b++] = '\0';
 	return (dest);
 }
+
