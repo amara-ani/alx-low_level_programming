@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * cap_string - capitalizes the beginning of a word
  * @str: checker
