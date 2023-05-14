@@ -2,7 +2,7 @@
 /**
  * *_strcat - main
  * @dest: character
- * @dest: character
+ * @src: character
  * Return: value
  */
 char *_strcat(char *dest, char *src)

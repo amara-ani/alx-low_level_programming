@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - main
+ * *_strcpy - main
  * @dest: character
  * @src: character
  * Return: value
