@@ -1,0 +1,1 @@
+Than to leave a skeletal C main function, we use argc and argv. They are used to count the number of arguments passed on a command line and holds each argument in an array. Each file in this folder displays how it can be used.
