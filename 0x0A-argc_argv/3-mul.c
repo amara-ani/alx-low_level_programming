@@ -8,29 +8,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, count;
-
-	count = 1;
-	if (argc < 2)
+	(void) argc;
+	if (argc != 3)
 	{
-		printf("Error\n");
+		puts("Error");
 		return (1);
 	}
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			if (atoi(argv[i]) >= 0 && atoi(argv[i]) <= 9)
-			{
-			count *= atoi(argv[i]);
-			}
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-		printf("%d\n", count);
-	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
