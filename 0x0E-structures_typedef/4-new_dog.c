@@ -1,47 +1,24 @@
-#include "dog.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include "dog.h"
+
 /**
- * *new_dog - function that create new dog
- * @name: sting
- * @age: age of string
- * @owner: owner
- * Return: value (success) or Null (failure)
+ *new_dog - creates a new dog
+ *@name: name of dog
+ *@age: age of dog
+ *@owner:owner of dog
+ *Return: new dog struct
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int nlen, olen, i;
-	dog_t *puppy;
+	struct dog *new_dog;
 
-	nlen = olen = 0;
-	while (name[nlen++])
-		;
-	while (owner[olen++])
-		;
-	puppy = malloc(sizeof(dog_t));
-	if (puppy == NULL)
-	{
-		free(puppy);
+	new_dog = malloc(sizeof(struct dog));
+	if (new_dog == NULL)
 		return (NULL);
-	}
-	puppy->name = malloc(nlen * sizeof(puppy->name));
-	if (puppy == NULL)
-	{
-		free(puppy->name);
-		return (NULL);
-	}
-
-	for (i = 0; i < nlen; i++)
-		puppy->name[i] = name[i];
-
-	puppy->age = age;
-
-	puppy->owner = malloc(olen * sizeof(puppy->owner));
-	if (puppy == NULL)
-	{
-		free(puppy->owner);
-		return (NULL);
-	}
-	for (i = 0; i < olen; i++)
-		puppy->owner[i] = owner[i];
-	return (puppy);
+	new_dog->name = name;
+	new_dog->age = age;
+	new_dog->owner = owner;
+	return (new_dog);
 }
