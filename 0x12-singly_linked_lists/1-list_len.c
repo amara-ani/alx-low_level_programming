@@ -3,7 +3,7 @@
 /**
  * list_len - number of elements in list_t
  * @h: holds the contents of list_t
- * Returns: number of elements
+ * Return: number of elements
  */
 size_t list_len(const list_t *h)
 {
