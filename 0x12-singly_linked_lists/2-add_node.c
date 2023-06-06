@@ -40,15 +40,15 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	new = malloc(sizeof(list_t));
-	if (new == NULL)
-	{
-		free(hold);
-		free(new);
-		return (NULL);
-	}
 	new->len = lentt;
 	new->str = hold;
 	new->next = *head;
 	*head = new;
+	if (new == NULL)
+	{
+		free(hold);
+		hold = NULL;
+		free(new);
+	}
 	return (new);
 }
